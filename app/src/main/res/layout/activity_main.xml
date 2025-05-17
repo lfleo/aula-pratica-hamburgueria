@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/headerCard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="4dp"
+        app:cardBackgroundColor="@color/purple_500"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="HamburgueriaZ"
+            android:textColor="@color/white"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            android:gravity="center"
+            android:padding="16dp" />
+    </androidx.cardview.widget.CardView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:fillViewport="true"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/headerCard">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <ImageView
+                android:id="@+id/imageLogo"
+                android:layout_width="match_parent"
+                android:layout_height="120dp"
+                android:scaleType="centerCrop"
+                android:src="@drawable/logo_hamburguer"
+                android:contentDescription="Logo HamburgueriaZ"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:id="@+id/textTitulo"
+                style="@style/EstiloTexto"
+                android:text="FAÇA SEU PEDIDO"
+                android:textSize="18sp"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:id="@+id/editTextNome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Nome do cliente"
+                android:inputType="textPersonName"
+                android:padding="12dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Escolha os adicionais:"
+                android:layout_marginBottom="8dp"/>
+
+            <CheckBox
+                android:id="@+id/checkBoxBacon"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Bacon (+R$ 2,00)"/>
+
+            <CheckBox
+                android:id="@+id/checkBoxQueijo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Queijo (+R$ 2,00)"/>
+
+            <CheckBox
+                android:id="@+id/checkBoxOnion"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Onion Rings (+R$ 3,00)"
+                android:layout_marginBottom="16dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/EstiloTexto"
+                android:text="QUANTIDADE"
+                android:gravity="center"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center"
+                android:layout_marginBottom="16dp">
+
+                <Button
+                    android:id="@+id/buttonMenos"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:text="-"
+                    android:textSize="20sp"/>
+
+                <TextView
+                    android:id="@+id/textViewQuantidade"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:text="1"
+                    android:textSize="24sp"
+                    android:gravity="center"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginEnd="16dp"/>
+
+                <Button
+                    android:id="@+id/buttonMais"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:text="+"
+                    android:textSize="20sp"/>
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/EstiloTexto"
+                android:text="RESUMO DO PEDIDO"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/textViewResumo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="#F5F5F5"
+                android:padding="16dp"
+                android:minHeight="120dp"
+                android:layout_marginBottom="16dp"
+                android:textSize="16sp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                style="@style/EstiloTexto"
+                android:text="PREÇO TOTAL"
+                android:gravity="center"/>
+
+            <TextView
+                android:id="@+id/textViewPrecoTotal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="R$ 20,00"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                android:gravity="center"
+                android:layout_marginBottom="24dp"/>
+
+            <Button
+                android:id="@+id/buttonEnviarPedido"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="ENVIAR PEDIDO"
+                android:padding="16dp"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginTop="8dp"/>
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>

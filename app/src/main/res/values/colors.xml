@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="burger_dark">#5D3A1A</color>
+    <color name="burger_medium">#7D4C27</color>
+    <color name="burger_light">#9E6B3C</color>
+
+    <color name="bun_dark">#D9A566</color>
+    <color name="bun_light">#F2D2A9</color>
+
+    <color name="ketchup_red">#B71C1C</color>
+    <color name="mustard_yellow">#F9A825</color>
+    <color name="lettuce_green">#7CB342</color>
+    <color name="cheese_yellow">#FFD54F</color>
+
+    <color name="primary">#5D3A1A</color>
+    <color name="primary_dark">#3E2712</color>
+    <color name="primary_light">#7D4C27</color>
+    <color name="accent">#B71C1C</color>
+
+    <color name="purple_200">#5D3A1A</color>
+    <color name="purple_500">#5D3A1A</color>
+    <color name="purple_700">#3E2712</color>
+    <color name="teal_200">#B71C1C</color>
+    <color name="teal_700">#8B0000</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="text_primary">#DE000000</color>
+    <color name="text_secondary">#99000000</color>
+    <color name="text_light">#FFFFFF</color>
+</resources>
