@@ -1,4 +1,4 @@
-# Aula Prática - Desenvolvimento Mobile**  
+# Aula Prática - Desenvolvimento Mobile
 ---
 ## Funcionalidades Implementadas  
 
